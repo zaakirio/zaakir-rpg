@@ -7,14 +7,14 @@ import { Direction } from "./Direction";
 //TODO: Update collision layers for scenery artifacts
 //TODO: Update character model
 //TODO: Create buildings and pathways
-
+//TODO: Enterring building logic -how to handle user enterring a building - how to handle changing scene, load new json upon enterring, will be generic rooms for projects
 const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
   active: false,
   visible: false,
   key: "Game",
 };
 
-const CANVAS_WIDTH = 2100;
+const CANVAS_WIDTH = 5000;
 const CANVAS_HEIGHT = 1900;
 
 export class GameScene extends Phaser.Scene {
@@ -95,9 +95,10 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   scene: GameScene,
   scale: {
-    width: CANVAS_WIDTH,
-    height: CANVAS_HEIGHT,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
+    mode: Phaser.Scale.RESIZE,
+    //width: CANVAS_WIDTH,
+    //height: CANVAS_HEIGHT,
+    //autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   parent: "game",
   backgroundColor: "#48C4F8",
