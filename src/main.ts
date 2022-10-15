@@ -14,8 +14,8 @@ const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
   key: "Game",
 };
 
-const CANVAS_WIDTH = 5000;
-const CANVAS_HEIGHT = 1900;
+// const CANVAS_WIDTH = 5000;
+// const CANVAS_HEIGHT = 1900;
 
 export class GameScene extends Phaser.Scene {
   static readonly TILE_SIZE = 48;
